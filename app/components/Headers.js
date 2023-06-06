@@ -52,44 +52,41 @@ export function Headers() {
           </Typography>
           <ul className="ml-10 hidden items-center gap-6 lg:flex">
             <NavItem>Home</NavItem>
-            <NavItem>About</NavItem>
-            <NavItem>Resources</NavItem>
             <NavItem>Pricing</NavItem>
+            <NavItem>Blog</NavItem>
+            <NavItem>Contact</NavItem>
           </ul>
-          <div className="ml-auto hidden gap-2 lg:flex">
+          <div className="ml-auto  gap-2 lg:flex">
             <Button variant="text" size="sm">
               login
             </Button>
-            <Button size="sm">sign up</Button>
+
+            <IconButton
+              size="sm"
+              variant="text"
+              color="blue-gray"
+              onClick={handleOpen}
+              className="ml-auto inline-block lg:hidden"
+            >
+              {open ? (
+                <XMarkIcon strokeWidth={2} className="h-6 w-6" />
+              ) : (
+                <Bars3Icon strokeWidth={2} className="h-6 w-6" />
+              )}
+            </IconButton>
           </div>
-          <IconButton
-            size="sm"
-            variant="text"
-            color="blue-gray"
-            onClick={handleOpen}
-            className="ml-auto inline-block lg:hidden"
-          >
-            {open ? (
-              <XMarkIcon strokeWidth={2} className="h-6 w-6" />
-            ) : (
-              <Bars3Icon strokeWidth={2} className="h-6 w-6" />
-            )}
-          </IconButton>
         </div>
         <MobileNav open={open}>
           <div className="container mx-auto mt-3 border-t border-blue-gray-50 px-2 pt-4">
             <ul className="flex flex-col gap-4">
               <NavItem>Home</NavItem>
-              <NavItem>About</NavItem>
-              <NavItem>Resources</NavItem>
               <NavItem>Pricing</NavItem>
+              <NavItem>Blog</NavItem>
+              <NavItem>Contact</NavItem>
             </ul>
-            <div className="mt-8 mb-4 flex gap-2">
-              <Button variant="outlined" size="sm" fullWidth>
-                login
-              </Button>
+            <div className="mt-8 mb-4">
               <Button size="sm" fullWidth>
-                sign up
+                Create an Account
               </Button>
             </div>
           </div>
