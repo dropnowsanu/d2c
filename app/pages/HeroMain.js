@@ -9,6 +9,7 @@ import {
   SpeakerWaveIcon,
 } from "@heroicons/react/24/outline";
 import Marquee from "react-fast-marquee";
+import Exchange from "../components/Exchange";
 
 
 export function HeroMain() {
@@ -26,6 +27,7 @@ export function HeroMain() {
             </Typography>
             <Marquee
             pauseOnHover={true}
+            speed={20}
             className="cursor-pointer">
               The price is not fixed as the price of Neteller Skrill is very high. Find out the price by talking live. If you send money from bKash, rocket, cash, you have to pay 2% cost. If necessary, talk: - WhatsApp or Live chart
             </Marquee>
@@ -36,39 +38,11 @@ export function HeroMain() {
             color="blue-gray"
             className="mb-8 leading-tight lg:text-6xl"
           >
-            Work with an amazing
+            Exchange
           </Typography>
-          <Typography
-            variant="lead"
-            color="gray"
-            className="mx-auto mb-12 w-full px-8 lg:w-10/12 lg:px-12 xl:w-8/12 xl:px-20"
-          >
-            People are so scared to lose that they don&apos;t even try. Like,
-            one thing people can&apos;t say is that I&apos;m not trying, and
-            I&apos;m not trying my hardest.
-          </Typography>
-          <div className="mb-20 flex justify-center gap-3">
-            <Button
-              variant="outlined"
-              color="blue-gray"
-              size="lg"
-              className="flex items-center"
-            >
-              <PlayCircleIcon
-                className="mr-1.5 -mt-0.5 h-6 w-6"
-                strokeWidth={2}
-              />
-              demo
-            </Button>
-            <Button size="lg">sign up</Button>
-          </div>
         </div>
-        <div className="mx-0 pb-8 lg:container lg:mx-auto">
-          <img
-            src="https://images.unsplash.com/photo-1571715268998-d6e79bed5fc9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2344&q=80"
-            alt="credit cards"
-            className="h-96 w-full object-cover md:h-[34rem] lg:h-[44rem] lg:rounded-xl"
-          />
+        <div className="container mx-auto flex justify-center">
+          <Exchange />
         </div>
       </header>
     </>
