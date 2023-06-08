@@ -2,10 +2,10 @@
 import React from "react";
 import {
   Navbar,
-  MobileNav,
   Button,
   IconButton,
   Typography,
+  Collapse,
 } from "@material-tailwind/react";
 import {
   Bars3Icon,
@@ -76,7 +76,7 @@ export function Headers() {
             </IconButton>
           </div>
         </div>
-        <MobileNav open={open}>
+        <Collapse open={open}>
           <div className="container mx-auto mt-3 border-t border-blue-gray-50 px-2 pt-4">
             <ul className="flex flex-col gap-4">
               <NavItem>Home</NavItem>
@@ -90,7 +90,7 @@ export function Headers() {
               </Button>
             </div>
           </div>
-        </MobileNav>
+        </Collapse>
       </Navbar>
     </>
   );
