@@ -28,7 +28,7 @@ export function HeroMain() {
             <Marquee
             pauseOnHover={true}
             speed={20}
-            className="cursor-pointer">
+            className="cursor-pointer text-sm">
               The price is not fixed as the price of Neteller Skrill is very high. Find out the price by talking live. If you send money from bKash, rocket, cash, you have to pay 2% cost. If necessary, talk: - WhatsApp or Live chart
             </Marquee>
 
