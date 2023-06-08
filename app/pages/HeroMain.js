@@ -36,7 +36,7 @@ export function HeroMain() {
           <Typography
             variant="h1"
             color="blue-gray"
-            className="mb-8 leading-tight lg:text-6xl"
+            className="mb-4 leading-tight lg:text-6xl"
           >
             Exchange
           </Typography>
