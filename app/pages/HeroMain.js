@@ -5,10 +5,11 @@ import {
   Typography,
 } from "@material-tailwind/react";
 import {
-  ArrowSmallRightIcon,
   PlayCircleIcon,
   SpeakerWaveIcon,
 } from "@heroicons/react/24/outline";
+import Marquee from "react-fast-marquee";
+
 
 export function HeroMain() {
 
@@ -21,19 +22,14 @@ export function HeroMain() {
               variant="small"
               className="mr-3 rounded-full bg-white px-2 py-0.5 font-medium text-blue-500"
             >
-              <SpeakerWaveIcon className="h-5"/>
+              <SpeakerWaveIcon className="h-5" />
             </Typography>
-            <Typography
-              color="blue"
-              variant="small"
-              className="!flex !items-center !font-semibold"
-            >
-              Get a new virtual card 
-              <ArrowSmallRightIcon
-                className="ml-1.5 h-4 w-4"
-                strokeWidth={3}
-              />
-            </Typography>
+            <Marquee
+            pauseOnHover={true}
+            className="cursor-pointer">
+              The price is not fixed as the price of Neteller Skrill is very high. Find out the price by talking live. If you send money from bKash, rocket, cash, you have to pay 2% cost. If necessary, talk: - WhatsApp or Live chart
+            </Marquee>
+
           </div>
           <Typography
             variant="h1"
